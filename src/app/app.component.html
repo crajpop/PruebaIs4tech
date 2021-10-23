@@ -8,11 +8,20 @@
 <div class="col-md-12">
   <div class="card text-center">
     <div class="card-header">
-      <h1>Datos covid-19 a nivel mundial</h1>
+      <div class="row">
+        <div class="col-md-10">
+          <h1>Datos covid-19 a nivel mundial</h1>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-danger" (click)="Formulario()">Suscripción</button>
+        </div>
+        
+      </div>
+        
     </div>
     <div class="card-body">
       <div style="width:100%;">
-        <canvas id="myChart" width="700" height="250" #mychart></canvas>
+         <canvas id="myChart" width="700" height="250" #mychart></canvas>
       </div>
     </div>
     <div class="card-footer text-muted">
@@ -20,7 +29,7 @@
     </div>
   </div>
   <br/>
-  <button class="btn btn-primary" (click)="mostrarCentroamerica()">Mostrar Datos de Centroamerica</button>
+  <button class="btn btn-success" (click)="mostrarCentroamerica()">Mostrar Datos de Centroamerica</button>
 </div>
 
 </div>

@@ -10,7 +10,7 @@ export class Covid19caService {
   constructor(
     private http:HttpClient
   ) { 
-    console.log('Servicio covid centroamerica')
+    //console.log('Servicio covid centroamerica')  mensaje de prueba
   }
   getCovid19(){
     let header =new HttpHeaders()

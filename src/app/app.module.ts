@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CentroamericaComponent } from './componentes/centroamerica/centroamerica.component';
@@ -14,6 +14,7 @@ import { ElsalvadorComponent } from './componentes/elsalvador/elsalvador.compone
 import { HondurasComponent } from './componentes/honduras/honduras.component';
 import { NicaraguaComponent } from './componentes/nicaragua/nicaragua.component';
 import { PanamaComponent } from './componentes/panama/panama.component';
+import { FormsuscripcionComponent } from './componentes/formsuscripcion/formsuscripcion.component';
 
 
 @NgModule({
@@ -28,10 +29,11 @@ import { PanamaComponent } from './componentes/panama/panama.component';
     HondurasComponent,
     NicaraguaComponent,
     PanamaComponent,
+    FormsuscripcionComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, FormsModule, NgbModule 
+    HttpClientModule, FormsModule, NgbModule, ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -29,7 +29,7 @@ export class CentroamericaComponent implements OnInit {
       this.covid19caService.getCovid19().subscribe((resp:any)=>{
         
         this.covid=resp  //asigna a la variable covid de tipo array los datos obtenidos de la API con la variable resp.
-        console.log(resp)
+        // console.log(resp) impresion de prueba de los datos de la API
     })
       
     

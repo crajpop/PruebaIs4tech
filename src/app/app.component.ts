@@ -5,6 +5,7 @@ import { __values } from 'tslib';
 import { NgbModal }from '@ng-bootstrap/ng-bootstrap';
 import { CentroamericaComponent } from './componentes/centroamerica/centroamerica.component';
 import { RouterModule } from '@angular/router';
+import { FormsuscripcionComponent } from './componentes/formsuscripcion/formsuscripcion.component';
 declare var jQuery:any;
 declare var $:any;
 
@@ -32,22 +33,14 @@ export class AppComponent implements OnInit{
       
     
   }
-
-  clickAddTodo(){
-    const modal=this.modalService.open(CentroamericaComponent);
-    modal.result.then(
-      this.handleModalCentroamericaComponentClose.bind(this),
-      this.handleModalCentroamericaComponentClose.bind(this)
-    )
+  Formulario(){
+    const modal=this.modalService.open(FormsuscripcionComponent);   
   }
 
-  handleModalCentroamericaComponentClose(){
-    alert('hola');
-  }
+
 
   public mostrarCentroamerica(){
-    console.log('Ha precionado mostrar centroamerica');
-    $('.centroA').slideToggle();
+    $('.centroA').slideToggle(); //ocultar y mostrar las graficas de los paises de centro america
   }
 
   ngOnInit(){
